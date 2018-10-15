@@ -40,7 +40,7 @@
     </section>
     <section class="featured">
       <h2 class="featured__title">Вязаные корзинки</h2>
-      <p class="featured__subtitle">Товар недели</p>
+      <p class="featured__tooltip">Товар недели</p>
       <p class="featured__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="featured-table">
         <tr class="featured-table__row">
@@ -65,24 +65,25 @@
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
-        <li class="about__item about__item--eco">Экологически<br>чистые материалы</li>
-        <li class="about__item about__item--price">Скандинавский стиль<br>по российской цене</li>
-        <li class="about__item about__item--heart">Увеличивает лайки<br>на фотографиях</li>
-        <li class="about__item about__item--love">Связано вручную с<br>любовью и умилением</li>
-        <li class="about__item about__item--support">Поддержка отечественного<br>производителя</li>
-        <li class="about__item about__item--gift">Поставляется в<br>подарочной упаковке</li>
+        <li class="about__item about__item--eco">Экологически чистые материалы</li>
+        <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
+        <li class="about__item about__item--heart">Увеличивает лайки на фотографиях</li>
+        <li class="about__item about__item--love">Связано вручную с любовью и умилением</li>
+        <li class="about__item about__item--support">Поддержка отечественного производителя</li>
+        <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
-      <blockquote class="reviews__item">
+      <article class="reviews__item">
+        <h3 class="visible-hidden">Отзыв №1</h3>
         <p class="reviews__text">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. 
           В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
         <cite class="reviews-author__name">Анастасия Красильникова</cite>
         <a class="reviews-author__link" href="#">@misssssiskras</a>
-      </blockquote>
+      </article>
       <button class="reviews__arrow reviews__arrow--prev" type="button">Предыдущий отзыв</button>
       <button class="reviews__arrow reviews__arrow--next" type="button">Следующий отзыв</button>
       <a class="btn reviews__btn" href="№">Написать</a>
@@ -106,7 +107,7 @@
       <a class="btn contacts__btn" href="#">Напишите нам</a>
     </section>
     <footer class="main-footer">
-      <h2 class="visually-hidden">Онлайн-магазин Мишка в социальных сетях</h2>
+      <h2 class="visible-hidden">Онлайн-магазин Мишка в социальных сетях</h2>
       <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="#">
@@ -134,7 +135,7 @@
         </a>
       </address>
     </footer>
-    <form class="modal order" method="POST" action="https://echo.htmlacademy.ru">
+    <form class="modal order" method="post" action="https://echo.htmlacademy.ru">
       <h2 class="order__title">Добавить в корзину</h2>
       <p class="order__subtitle">Выберите размер:</p>
       <div class="order__list">
