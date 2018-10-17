@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка - Каталог</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -27,8 +30,8 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
     </header>
-    <h1 class="title--main">Вязание на заказ</h1>
-    <form class="booking__form" method="POST" action="https://echo.htmlacademy.ru">
+    <h1 class="title">Вязание на заказ</h1>
+    <form class="booking" method="post" action="https://echo.htmlacademy.ru">
       <p class="booking__desc">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
@@ -76,25 +79,19 @@
       </fieldset>
       <fieldset class="booking__fieldset">
         <legend class="booking__subtitle">Фио:</legend>
-        <div class="booking-fieldgroup">
-          <label class="booking-fieldgroup__label" for="booking-name">Имя:</label>
-          <input class="booking-fieldgroup__input" type="text" name="booking-name" id="booking-name" placeholder="Введите ваше имя*">
-        </div>
-        <div class="booking-fieldgroup">
-          <label class="booking-fieldgroup__label" for="booking-second-name">Фамилия:</label>
-          <input class="booking-fieldgroup__input" type="text" name="booking-second-name" id="booking-second-name" placeholder="Укажите фамилию*">
-        </div>
-        <div class="booking-fieldgroup">
-          <label class="booking-fieldgroup__label" for="booking-third-name">Отчество:</label>
-          <input class="booking-fieldgroup__input" type="text" name="booking-third-name" id="booking-third-name" placeholder="Отчество, если желаете">
-        </div>
+        <label class="booking__user-info-label" for="booking-name">Имя:</label>
+        <input class="booking__user-info-input" type="text" name="booking-name" id="booking-name" placeholder="Введите ваше имя*">
+        <label class="booking__user-info-label" for="booking-second-name">Фамилия:</label>
+        <input class="booking__user-info-input" type="text" name="booking-second-name" id="booking-second-name" placeholder="Укажите фамилию*">
+        <label class="booking__user-info-label" for="booking-third-name">Отчество:</label>
+        <input class="booking__user-info-input" type="text" name="booking-third-name" id="booking-third-name" placeholder="Отчество, если желаете">
       </fieldset>
       <label class="booking__subtitle" for="booking-phone">Тел</label>
-      <input class="booking-fieldgroup__input" type="number" name="booking-phone" id="booking-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+      <input class="booking__user-info-input booking__user-info-input--phone" type="number" name="booking-phone" id="booking-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
       <label class="booking__subtitle" for="booking-email">E-mail</label>
-      <input class="booking-fieldgroup__input" type="email" name="booking-phone" id="booking-email" placeholder="Ваш Email*">
+      <input class="booking__user-info-input booking__user-info-input--email" type="email" name="booking-phone" id="booking-email" placeholder="Ваш Email*">
       <label class="booking__subtitle" for="booking-msg">Доп</label>
-      <textarea class="booking-fieldgroup__input booking-fieldgroup__input--textarea" rows="5" name="booking-msg" id="booking-msg" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <textarea class="booking__user-info-input booking__user-info-input--textarea" rows="5" name="booking-msg" id="booking-msg" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       <p class="booking__tip">*Поля обязательны для заполнения</p>
       <button class="btn booking__btn" type="submit">Добавить</button>
     </form>
@@ -120,12 +117,12 @@
           </a>
         </li>
       </ul>
-      <address class="main-footer-author">
-        <span class="main-footer-author__caption">Разработано</span>
-        <a class="main-footer-author__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="main-footer-author__img" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип Академии">
+      <small class="copyright">
+        <span class="copyright__caption">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__img" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип Академии">
         </a>
-      </address>
+      </small>
     </footer>
   </body>
 </html>

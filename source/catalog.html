@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка - Каталог</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -27,7 +30,7 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
     </header>
-    <h1 class="title--main">Каталог товаров</h1>
+    <h1 class="title">Каталог товаров</h1>
     <section class="product__list">
       <h2 class="visible-hidden">Карточки товаров</h2>
       <div class="product__item">
@@ -97,12 +100,12 @@
           </a>
         </li>
       </ul>
-      <address class="main-footer-author">
-        <span class="main-footer-author__caption">Разработано</span>
-        <a class="main-footer-author__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="main-footer-author__img" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип Академии">
+      <small class="copyright">
+        <span class="copyright__caption">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__img" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип Академии">
         </a>
-      </address>
+      </small>
     </footer>
     <form class="modal order" method="POST" action="https://echo.htmlacademy.ru">
       <h2 class="order__title">Добавить в корзину</h2>
