@@ -14,3 +14,11 @@
   width: 86px;
   height: auto;
 }
+
+.main-header__logo[href]:hover .main-header__logo-image {
+  opacity: 0.6;
+}
+
+.main-header__logo[href]:active .main-header__logo-image {
+  opacity: 0.3;
+}

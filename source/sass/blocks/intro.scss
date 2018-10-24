@@ -10,9 +10,9 @@
   color: #010000;
   font-size: 27px;
   line-height: 30px;
-  font-family: "Open Sans Bold", sans-serif;
+  font-weight: 700;
   padding-top: 75px;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
 }
 
 .intro__list {
@@ -21,25 +21,50 @@
   margin: 0;
 }
 
-.intro__item {
-  background-color: #63d1bb;
+.intro__link {
+  text-decoration: none;
   padding: 30px 0;
+  display: block;
 }
 
-.intro__item--interior {
+.intro__link--interior {
   background-color: #63d1bb;
 }
 
-.intro__item--toys {
+.intro__link--toys {
   background-color: #56c3b2;
 }
 
-.intro__link {
-  font-family: "Open Sans Bold", sans-serif;
+.intro__subtitle {
+  font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
-  text-decoration: none;
-  max-width: 130px;
-  display: block;
+}
+
+.intro__icon {
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.intro__link--interior:hover,
+.intro__link--interior:active {
+  background-color: #59d5bc;
+}
+
+.intro__link--toys:hover,
+.intro__link--toys:active {
+  background-color: #46c1ae;
+}
+
+.intro__link:active .intro__subtitle {
+  opacity: 0.3;
+}
+
+.intro__link:hover .intro__icon {
+  opacity: 0.7;
+}
+
+.intro__link:active .intro__icon {
+  opacity: 0.3;
 }

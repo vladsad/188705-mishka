@@ -1,0 +1,50 @@
+.featured__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+.featured__tooltip {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #63d1bb; //можно наверное его в переменную, не так ли как и другие цвета?
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+}
+
+.featured__desc {
+  margin: 0 0 20px 0;
+}
+
+.featured-table {
+  line-height: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.featured-table__column {
+  padding: 0;
+}
+
+.featured-table__column:first-child {
+  width: 98px;
+}
+
+.featured-table__row {
+  display: block;
+  border-bottom: 1px solid #ececec;
+}
+
+.featured__img {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #ececec;
+  min-height: 315px;
+}
