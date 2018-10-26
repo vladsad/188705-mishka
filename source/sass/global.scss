@@ -8,16 +8,18 @@
 }
 
 @font-face {
-  font-family: "Open Sans Bold";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   src: local("Open Sans Bold"),
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
 }
 
 .container {
+  width: 260px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 body {
@@ -26,4 +28,72 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visible-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  border: solid 2px #444444;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@mixin index-title-h2 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

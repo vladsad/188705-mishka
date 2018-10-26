@@ -1,0 +1,48 @@
+.about {
+  padding-top: 26px;
+  padding-bottom: 5px;
+}
+
+.about__title {
+  @include index-title-h2;
+}
+
+.about__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  position: relative;
+  padding-top: 55px;
+  margin-bottom: 30px;
+  max-width: 200px;
+}
+
+.about__item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 55px;
+  height: 38px;
+  top: 0;
+  left: -7px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.about__item--ball,
+.about__item--rocket {
+  max-width: 250px;
+}
+
+@each $icon in ball,flower,gift,heart,money,rocket {
+  .about__item--#{$icon}::after {
+    background-image: url(../img/icon-feature-#{$icon}.svg);
+  }
+}

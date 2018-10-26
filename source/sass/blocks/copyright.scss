@@ -1,0 +1,25 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  font-style: normal;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.copyright__caption {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-right: 30px;
+}
+
+.copyright__icon:hover,
+.copyright__icon:active {
+  fill: #46c1ae;
+}
+
+.copyright__icon:active {
+  opacity: 0.3;
+}

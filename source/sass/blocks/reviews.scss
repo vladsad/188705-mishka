@@ -1,0 +1,85 @@
+.reviews {
+  position: relative;
+  padding-bottom: 41px;
+}
+
+.reviews::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 6px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x;
+  background-size: auto 6px;
+}
+
+.reviews__title {
+  @include index-title-h2;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0 0 40px 0;
+}
+
+.reviews__author-name {
+  display: block;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reviews__author-link {
+  font-size: 17px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 0 1px #ececec;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.reviews__controls::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #ececec;
+}
+
+.reviews__arrow {
+  width: 130px;
+  flex: 1 0 50%;
+  height: 52px;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  font-size: 0;
+  cursor: pointer;
+  background-image: url("../img/icon-right-arrow.svg");
+}
+
+.reviews__arrow--prev {
+  transform: rotate(180deg);
+}
+
+.reviews__arrow:hover {
+  opacity: 0.6;
+}
+
+.reviews__arrow:active {
+  opacity: 0.3;
+}

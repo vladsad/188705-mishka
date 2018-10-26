@@ -1,16 +1,29 @@
+.featured {
+  position: relative;
+  padding-bottom: 41px;
+}
+
+.featured::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 6px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x;
+  background-size: auto 6px;
+}
+
 .featured__title {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000000;
-  margin: 0;
+  @include index-title-h2;
 }
 
 .featured__tooltip {
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  color: #63d1bb; //можно наверное его в переменную, не так ли как и другие цвета?
+  color: #63d1bb;
   margin: 0 0 30px 0;
   text-transform: uppercase;
 }
@@ -47,4 +60,11 @@
   margin: 0;
   background-color: #ececec;
   min-height: 315px;
+}
+
+.featured__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
 }
