@@ -17,7 +17,6 @@
 }
 
 .container {
-  width: 260px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -52,11 +51,22 @@ img {
   clip-path: inset(100%);
 }
 
+.title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  padding: 72px 30px 75px;
+  text-align: center;
+  margin: 0;
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+}
 
 .btn {
   display: block;
   width: 100%;
-  padding: 20px 0;
+  padding: 14px 0;
   text-align: center;
   border: solid 2px #444444;
   background-color: #ffffff;

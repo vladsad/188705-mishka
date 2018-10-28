@@ -8,15 +8,14 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
-  margin-bottom: 20px;
 }
 
 .social__item {
-  margin-right: 34px;
+  margin-right: 40px;
 }
 
 .social__item:last-child {
-  margin-right: 0;
+  margin-right: 4px;
 }
 
 .social__icon:hover path,

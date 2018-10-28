@@ -1,10 +1,11 @@
 .about {
-  padding-top: 26px;
-  padding-bottom: 5px;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .about__title {
   @include index-title-h2;
+  margin-bottom: 30px;
 }
 
 .about__list {
@@ -19,7 +20,7 @@
   font-weight: 700;
   color: #000000;
   position: relative;
-  padding-top: 55px;
+  padding-top: 53px;
   margin-bottom: 30px;
   max-width: 200px;
 }
@@ -28,10 +29,10 @@
   position: absolute;
   content: "";
   display: block;
-  width: 55px;
+  width: 53px;
   height: 38px;
   top: 0;
-  left: -7px;
+  left: -5px;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -41,8 +42,26 @@
   max-width: 250px;
 }
 
-@each $icon in ball,flower,gift,heart,money,rocket {
+.about__item--flower {
+  max-width: 190px;
+}
+
+$icons: (
+  ball: (3px, -6px),
+  flower: (0, -2px),
+  gift: (2px, -8px),
+  heart: (6px, -3px),
+  money: (2px, -3px),
+  rocket: (5px, -5px)
+);
+
+@each $icon, $pos in $icons {
+  $top: nth($pos, 1);
+  $left: nth($pos, 2);
+
   .about__item--#{$icon}::after {
     background-image: url(../img/icon-feature-#{$icon}.svg);
+    top: $top;
+    left: $left;
   }
 }
