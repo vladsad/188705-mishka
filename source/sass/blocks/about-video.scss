@@ -34,10 +34,8 @@
   position: absolute;
   width: 101px;
   height: 77px;
-  left: 50%;
-  top: 50%;
-  margin-left: -50px;
-  margin-top: -39px;
+  left: calc(50% - 50px);
+  top: calc(50% - 39px);
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   cursor: pointer;

@@ -26,12 +26,14 @@ if(product__btns !==null ) {
   }
 }
 
-modal__overlay.addEventListener("click", function (event) {
-  if (event.target == modal__overlay) {
-    modal.classList.remove("modal--show");
-    modal__overlay.classList.remove("modal__overlay--show");
-  }
-});
+if(modal__overlay !==null ) {
+  modal__overlay.addEventListener("click", function (event) {
+    if (event.target == modal__overlay) {
+      modal.classList.remove("modal--show");
+      modal__overlay.classList.remove("modal__overlay--show");
+    }
+  });
+}
 
 main_nav__toggle.addEventListener("click", function (event) {
   event.preventDefault();

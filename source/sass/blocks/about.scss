@@ -46,22 +46,61 @@
   max-width: 190px;
 }
 
-$icons: (
-  ball: (3px, -6px),
-  flower: (0, -2px),
-  gift: (2px, -8px),
-  heart: (6px, -3px),
-  money: (2px, -3px),
-  rocket: (5px, -5px)
-);
-
-@each $icon, $pos in $icons {
-  $top: nth($pos, 1);
-  $left: nth($pos, 2);
-
-  .about__item--#{$icon}::after {
-    background-image: url(../img/icon-feature-#{$icon}.svg);
-    top: $top;
-    left: $left;
-  }
+.about__item--ball::after {
+  background-image: url("../img/icon-feature-ball.svg");
+  top: 3px;
+  left: -6px;
 }
+
+.about__item--flower::after {
+  background-image: url("../img/icon-feature-flower.svg");
+  top: 0;
+  left: -2px;
+}
+
+.about__item--gift::after {
+  background-image: url("../img/icon-feature-gift.svg");
+  top: 2px;
+  left: -8px;
+}
+
+.about__item--heart::after {
+  background-image: url("../img/icon-feature-heart.svg");
+  top: 6px;
+  left: -3px;
+}
+
+.about__item--money::after {
+  background-image: url("../img/icon-feature-money.svg");
+  top: 2px;
+  left: -3px;
+}
+
+.about__item--rocket::after {
+  background-image: url("../img/icon-feature-rocket.svg");
+  top: 5px;
+  left: -5px;
+}
+
+// оставил для себя
+//
+// $icons: (
+//   ball: (3px, -6px),
+//   flower: (0, -2px),
+//   gift: (2px, -8px),
+//   heart: (6px, -3px),
+//   money: (2px, -3px),
+//   rocket: (5px, -5px)
+// );
+//
+// @each $icon, $pos in $icons {
+//   $top: nth($pos, 1);
+//   $left: nth($pos, 2);
+//
+//   .about__item--#{$icon}::after {
+//     background-image: url("../img/icon-feature-#{$icon}.svg");
+//     top: $top;
+//     left: $left;
+//   }
+// }
+//

@@ -58,11 +58,11 @@
   border-color: rgba($color: #444444, $alpha: 0.3);
 }
 
-input[name="order_size"]:checked + label {
+.order__input:checked + label {
   border-color: #63d1bb;
 }
 
-input[name="order_size"]:focus + label {
+.order__input:focus + label {
   outline-width: 2px;
   outline-style: solid;
   outline-color: #6997c9;
